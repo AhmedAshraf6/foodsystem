@@ -27,7 +27,7 @@ export default function Categories() {
       <div className='flex flex-wrap justify-center gap-x-3 sm:gap-x-5 gap-y-2 '>
         {categories &&
           categories.length > 0 &&
-          categories.map((category) => {
+          categories.map((category, index) => {
             return (
               <button
                 type='button'
@@ -35,6 +35,7 @@ export default function Categories() {
                   activeCat === category ? 'btn-full' : 'btn btn-outlined'
                 }`}
                 onClick={() => handleProduct(category)}
+                key={index}
               >
                 {category}
               </button>

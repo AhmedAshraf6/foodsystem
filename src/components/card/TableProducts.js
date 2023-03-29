@@ -9,22 +9,22 @@ export default function TableProducts() {
   return (
     <>
       {card && card.length > 0 && (
-        <table class='border-collapse border border-slate-400  w-full table-fixed  '>
+        <table className='border-collapse border border-slate-400  w-full table-fixed  '>
           <thead>
             <tr>
-              <th class='border  border-b-gray-700 border-gray-300 p-2 text-black font-bold text-xs sm:text-lg '>
+              <th className='border  border-b-gray-700 border-gray-300 p-2 text-black font-bold text-xs sm:text-lg '>
                 صورة المنتج
               </th>
-              <th class='border  border-b-gray-700 border-gray-300 p-2 text-black font-bold text-xs sm:text-lg'>
+              <th className='border  border-b-gray-700 border-gray-300 p-2 text-black font-bold text-xs sm:text-lg'>
                 الاسم
               </th>
-              <th class='border  b order-b-gray-700 border-gray-300 p-2 text-black font-bold text-xs sm:text-lg'>
+              <th className='border  b order-b-gray-700 border-gray-300 p-2 text-black font-bold text-xs sm:text-lg'>
                 السعر
               </th>
-              <th class='border  border-b-gray-700 border-gray-300 p-2 text-black font-bold text-xs sm:text-lg'>
+              <th className='border  border-b-gray-700 border-gray-300 p-2 text-black font-bold text-xs sm:text-lg'>
                 الكمية
               </th>
-              <th class='border  border-b-gray-700 border-gray-300 p-2 text-black font-bold text-xs sm:text-lg'>
+              <th className='border  border-b-gray-700 border-gray-300 p-2 text-black font-bold text-xs sm:text-lg'>
                 إجمالي
               </th>
             </tr>
@@ -33,7 +33,7 @@ export default function TableProducts() {
             {card.map((product) => {
               const { id, price, images, amount, name } = product;
               return (
-                <tr>
+                <tr key={id}>
                   <td className='border border-slate-300 p-1 sm:p-2 text-center sm:text-start flex flex-col sm:flex-row items-center gap-2 sm:gap-2'>
                     <AiOutlineClose
                       className='text-gray-600 cursor-pointer text-xl'
