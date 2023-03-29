@@ -2,6 +2,14 @@ import Footer from '@/components/shared/Footer';
 import Navbar from '@/components/shared/Navbar';
 import ResponsiveNavbar from '@/components/shared/ResponsiveNavbar';
 import MainProvider from '@/contexts/MainProvider';
+import { El_Messiri } from 'next/font/google';
+
+const arbfont = El_Messiri({
+  weight: ['400', '500', '600', '700'],
+  subsets: ['latin'],
+  display: 'swap',
+});
+
 import './globals.css';
 
 export const metadata = {
@@ -11,7 +19,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang='ar' dir='rtl'>
+    <html lang='ar' dir='rtl' className={arbfont.className}>
       <body className='font-arb'>
         <MainProvider>
           {/* Navbar */}

@@ -8,9 +8,9 @@ module.exports = {
         white: '#ffffff',
         black: '#000000',
       },
-      fontFamily: {
-        arb: ['"El Messiri"', 'sans-serif'],
-      },
+      // fontFamily: {
+      //   arb: ['"El Messiri"', 'sans-serif'],
+      // },
     },
   },
   plugins: [],
