@@ -1,11 +1,36 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 export default function LandingPage() {
   return (
-    <div className='min-h-screen bg-[url("/hero-bg.jpg")] bg-cover bg-center-center relative'>
-      <div className='absolute top-0 left-0 w-[100%] h-[100%] bg-[#07212e] opacity-60'></div>
+    // bg-[url("/hero-bg.jpg")] bg-cover bg-center-center
+    <div className='min-h-screen relative'>
+      <div
+        className='absolute top-0 left-0 w-[100%] h-[100%] bg-[#07212e] opacity-60'
+        style={{
+          zIndex: 2,
+        }}
+      ></div>
+      <Image
+        src='/hero-bg.jpg'
+        width={300}
+        height={300}
+        style={{
+          Width: '100%',
+          height: '100%',
+        }}
+        className='absolute top-0 left-0 w-[100%] h-[100%] object-cover'
+        placeholder='blur'
+        blurDataURL='/spinner.svg'
+        alt='image not avalible'
+      ></Image>
       {/* absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] */}
-      <div className='relative flex flex-col justify-center items-center min-h-screen px-4'>
+      <div
+        className='relative flex flex-col justify-center items-center min-h-screen px-4'
+        style={{
+          zIndex: 3,
+        }}
+      >
         <h4 className='text-primary text-lg sm:text-3xl mb-3 sm:mb-6 font-semibold'>
           طازج وعضوي
         </h4>
