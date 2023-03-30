@@ -24,7 +24,7 @@ export default function Navbar() {
       className={`w-full mx-auto px-5 sm:px-10 py-3 fixed top-0 z-10 text-white bg-${navColor}  transition-colors duration-1000`}
     >
       <div className='flex justify-between  items-center'>
-        <Link href='/' aria-label='logo image'>
+        <Link href='/'>
           <Image
             src='/logo.png'
             width={150}
@@ -49,11 +49,7 @@ export default function Navbar() {
               </Link>
             ))}
         </ul>
-        <Link
-          className='relative  flex gap-3 cursor-pointer'
-          href='/shop/card'
-          aria-label='shoppping image'
-        >
+        <Link className='relative  flex gap-3 cursor-pointer' href='/shop/card'>
           <FiShoppingCart className='text-2xl' />
           {amount > 0 && (
             <span className='absolute top-[-14px] right-[-10px] min-w-[25px] min-h-[25px]  bg-primary rounded-full text-white font-bold flex items-center justify-center px-1'>

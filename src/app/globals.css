@@ -2,7 +2,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 @layer components {
   .btn {
     @apply transition-colors duration-300 rounded-3xl min-w-[140px] py-3 text-center;

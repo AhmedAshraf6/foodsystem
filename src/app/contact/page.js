@@ -4,7 +4,7 @@ import PuplicLandingPage from '@/components/shared/PuplicLandingPage';
 
 export default function page() {
   return (
-    <div className='w-[100%] h-[100%]'>
+    <div>
       <PuplicLandingPage title='تواصل معنا' desc='دعم 24 ساعة' />
       <ContactForm />
     </div>
