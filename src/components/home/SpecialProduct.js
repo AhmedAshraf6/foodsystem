@@ -43,7 +43,9 @@ export default function SpecialProduct() {
             </div>
           </div>
           <div className='flex justify-start'>
-            <button className='btn btn-full '>اضافة إلي السلة</button>
+            <button className='btn btn-full ' role='button'>
+              اضافة إلي السلة
+            </button>
           </div>
         </div>
       </div>

@@ -11,7 +11,11 @@ export default function CardContainer() {
       {card.length === 0 ? (
         <section className='flex flex-col gap-3 justify-center items-center p-4'>
           <h2 className='head'>لا شئ في السلة</h2>
-          <Link href='/shop' className='btn btn-full'>
+          <Link
+            href='/shop'
+            className='btn btn-full'
+            aria-label='Return fo store'
+          >
             الرجوع الي المتجر
           </Link>
         </section>
@@ -23,10 +27,18 @@ export default function CardContainer() {
           <div className='w-full'>
             <TableTotal />
             <div className='flex justify-start items-start flex-wrap sm:flex-row gap-3 mt-3'>
-              <button type='button' className='btn btn-full py-2 min-w-[100px]'>
+              <button
+                type='button'
+                className='btn btn-full py-2 min-w-[100px]'
+                role='button'
+              >
                 إتمام الشراء
               </button>
-              <button type='button' className='btn btn-full py-2 min-w-[100px]'>
+              <button
+                type='button'
+                className='btn btn-full py-2 min-w-[100px]'
+                role='button'
+              >
                 تحديث
               </button>
             </div>

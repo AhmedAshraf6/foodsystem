@@ -6,7 +6,7 @@ import ButtonAddToCard from './ButtonAddToCard';
 export default function CardProduct({ id, name, price, images }) {
   return (
     <div className='cursor-pointer py-3 sm:hover:shadow-slate-400 sm:shadow-md rounded-lg sm:border sm:border-gray-200 transition-shadow duration-200 group flex flex-col justify-center items-center'>
-      <Link href={`/shop/${id}`}>
+      <Link href={`/shop/${id}`} aria-label='redirect to shop page'>
         <Image
           src={images[0]}
           width={300}

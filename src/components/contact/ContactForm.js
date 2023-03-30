@@ -22,7 +22,7 @@ export default function ContactForm() {
             placeholder='الرسالة'
           ></textarea>
           <div className='flex justify-start'>
-            <button type='submit' className='btn btn-full'>
+            <button type='submit' className='btn btn-full' role='button'>
               تسجيل
             </button>
           </div>

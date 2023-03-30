@@ -36,19 +36,35 @@ export default function Footer() {
             </h3>
             <span className='border-t-4 border-primary w-[10%] my-3'></span>
             <div className='text-gray-400 text-base flex flex-col gap-2 sm:gap-3'>
-              <Link href='/' className='flex items-center gap-x-1'>
+              <Link
+                href='/'
+                className='flex items-center gap-x-1'
+                aria-label='home page'
+              >
                 <IoMdArrowDropleft className='text-primary' />
                 <span className='font-bold'>الرئيسية</span>
               </Link>
-              <Link href='/about' className='flex items-center gap-x-1'>
+              <Link
+                href='/about'
+                className='flex items-center gap-x-1'
+                aria-label='about us page'
+              >
                 <IoMdArrowDropleft className='text-primary' />
                 <span className='font-bold'>من نحن</span>
               </Link>
-              <Link href='/shop' className='flex items-center gap-x-1'>
+              <Link
+                href='/shop'
+                className='flex items-center gap-x-1'
+                aria-label='shop page'
+              >
                 <IoMdArrowDropleft className='text-primary' />
                 <span className='font-bold'>المتجر</span>
               </Link>
-              <Link href='/contact' className='flex items-center gap-x-1'>
+              <Link
+                href='/contact'
+                className='flex items-center gap-x-1'
+                aria-label='contact us page'
+              >
                 <IoMdArrowDropleft className='text-primary' />
                 <span className='font-bold'>تواصل معنا</span>
               </Link>
@@ -69,6 +85,7 @@ export default function Footer() {
               <button
                 type='button'
                 className='rounded-lg flex justify-center items-center p-4 bg-[#012738] text-primary hover:bg-primary hover:text-[#012738] transition-all duration-400 '
+                role='button'
               >
                 <FaTelegramPlane className='text-xl ' />
               </button>

@@ -28,6 +28,7 @@ export default function ResponsiveNavbar() {
                   key={nav.id}
                   onClick={() => setActiveNav(nav.id)}
                   href={nav.link}
+                  aria-label='title'
                 >
                   {nav.title}
                 </Link>

@@ -21,7 +21,7 @@ export default function InfoSection() {
           عليه أن يرفض الحقيقة الأقل ، وبجهد أقل المرونة التي نقودها.
         </p>
         <div className='flex justify-start'>
-          <Link className='btn btn-full' href='/about'>
+          <Link className='btn btn-full' href='/about' aria-label='about page'>
             لمعرفة المزيد
           </Link>
         </div>

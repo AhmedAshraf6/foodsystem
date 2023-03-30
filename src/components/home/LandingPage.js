@@ -41,12 +41,14 @@ export default function LandingPage() {
           <Link
             className='bg-primary text-white  hover:bg-secondary hover:text-primary transition-colors duration-300 rounded-3xl min-w-[140px] py-3 text-center'
             href='/shop'
+            aria-label='shop page'
           >
             المتجر
           </Link>
           <Link
             className='bg-transparent text-white border-2 border-primary hover:bg-primary  transition-colors duration-300 rounded-3xl min-w-[140px] py-3 text-center'
             href='/contact'
+            aria-label='contact us page'
           >
             تواصل معنا
           </Link>

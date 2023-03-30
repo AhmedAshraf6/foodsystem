@@ -40,7 +40,7 @@ export default function VideoModal() {
         style={customStyles}
         contentLabel='Example Modal'
       >
-        <button onClick={closeModal}>
+        <button onClick={closeModal} role='button'>
           <AiFillCloseSquare className='text-3xl text-primary' />
         </button>
         <iframe

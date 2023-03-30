@@ -7,6 +7,7 @@ export default function ButtonAddToCard({ id }) {
       className=' btn btn-full btn-full-disabled'
       onClick={() => addProduct(id)}
       disabled={itemsInCard.includes(id) ? true : false}
+      role='button'
     >
       {itemsInCard.includes(id) ? 'في السلة' : 'اضافة الي السلة'}
     </button>

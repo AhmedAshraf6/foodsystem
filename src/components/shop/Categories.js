@@ -36,6 +36,7 @@ export default function Categories() {
                 }`}
                 onClick={() => handleProduct(category)}
                 key={index}
+                role='button'
               >
                 {category}
               </button>

@@ -14,7 +14,11 @@ export default function Banner() {
             <span>خصم</span>
           </div>
           <div className='flex justify-start'>
-            <Link href='/shop' className='btn btn-full'>
+            <Link
+              href='/shop'
+              className='btn btn-full'
+              aria-label='buy now product'
+            >
               شراء الان
             </Link>
           </div>
