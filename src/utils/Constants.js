@@ -17,11 +17,6 @@ export const navLiks = [
     title: 'المتجر',
     link: 'shop',
   },
-  {
-    id: '4',
-    title: 'تواصل معنا',
-    link: 'contact',
-  },
 ];
 export const statsItems = [
   {
